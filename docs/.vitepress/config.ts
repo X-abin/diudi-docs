@@ -17,6 +17,7 @@ export default defineConfig({
     nav: [
       { text: '指南', link: '/guide/product' },
       { text: '工具接入', link: '/integrations/openai-compatible' },
+      { text: '账户与订阅', link: '/account/overview' },
       { text: '模型与价格', link: '/guide/models-pricing' },
       { text: 'DouDi.ai', link: 'https://doudi.ai' }
     ],
@@ -47,6 +48,16 @@ export default defineConfig({
           { text: 'Hermes / OpenClaw 403 代理', link: '/integrations/hermes-openclaw-403' },
           { text: 'LangChain / SDK', link: '/integrations/langchain-sdk' },
           { text: '常见问题排查', link: '/integrations/troubleshooting' }
+        ]
+      },
+      {
+        text: '账户与订阅',
+        items: [
+          { text: '账户概览', link: '/account/overview' },
+          { text: '充值余额', link: '/account/top-up' },
+          { text: '订阅套餐选择', link: '/account/subscriptions' },
+          { text: '订单与发票', link: '/account/invoices' },
+          { text: '账户问题排查', link: '/account/troubleshooting' }
         ]
       }
     ],
