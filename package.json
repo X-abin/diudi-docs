@@ -1,0 +1,17 @@
+{
+  "name": "diudi-docs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "tsx scripts/sync-doudi-data.ts",
+    "docs:dev": "vitepress dev docs --host 0.0.0.0",
+    "docs:build": "pnpm run sync && vitepress build docs",
+    "docs:preview": "vitepress preview docs --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0",
+    "vitepress": "^1.6.3"
+  }
+}
