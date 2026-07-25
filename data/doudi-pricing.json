@@ -1,0 +1,287 @@
+{
+  "auto_groups": [],
+  "data": [
+    {
+      "model_name": "gpt-5.6-terra",
+      "description": "OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。",
+      "icon": "OpenAI",
+      "tags": "深度推理,逻辑分析,长文处理",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 0.75,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 8,
+      "enable_groups": [
+        "Codex-Stable"
+      ],
+      "supported_endpoint_types": [
+        "path",
+        "method"
+      ],
+      "pricing_version": "5a90f2b86c08bd983a9a2e6d66c255f4eaef9c4bc934386d2b6ae84ef0ff1f1f"
+    },
+    {
+      "model_name": "gpt-5.6-luna",
+      "description": "OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。",
+      "icon": "OpenAI",
+      "tags": "深度推理,长文处理,高质生成",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 0.35,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 8,
+      "enable_groups": [
+        "Codex-Stable"
+      ],
+      "supported_endpoint_types": [
+        "path",
+        "method"
+      ]
+    },
+    {
+      "model_name": "codex-auto-review",
+      "description": "适配 Codex 自动审批功能的模型别名，实际请求会映射到 gpt-5.5。",
+      "icon": "OpenAI",
+      "tags": "代码审查,逻辑分析,代码工程",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 37.5,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 1,
+      "enable_groups": [
+        "Codex-Stable"
+      ],
+      "supported_endpoint_types": [
+        "openai",
+        "openai-response"
+      ]
+    },
+    {
+      "model_name": "gpt-5.4-mini",
+      "description": "gpt-5.4-mini模型的变体模型，只为了compact压缩而存在。",
+      "icon": "OpenAI",
+      "tags": "快速轻量,日常问答,逻辑分析",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 0.375,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 6,
+      "enable_groups": [
+        "Codex-Stable"
+      ],
+      "supported_endpoint_types": [
+        "path",
+        "method"
+      ]
+    },
+    {
+      "model_name": "gpt-5.6-sol",
+      "description": "OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。",
+      "icon": "OpenAI",
+      "tags": "深度推理,逻辑分析,高质生成",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 1.25,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 8,
+      "enable_groups": [
+        "Codex-Stable"
+      ],
+      "supported_endpoint_types": [
+        "openai",
+        "openai-response"
+      ]
+    },
+    {
+      "model_name": "gpt-5.4",
+      "description": "OpenAI 最新旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。",
+      "icon": "OpenAI",
+      "tags": "日常问答,长文处理,代码工程",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 37.5,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 6,
+      "enable_groups": [
+        "Codex-Stable"
+      ],
+      "supported_endpoint_types": [
+        "openai",
+        "openai-response"
+      ]
+    },
+    {
+      "model_name": "gpt-5.6",
+      "description": "OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。",
+      "icon": "OpenAI",
+      "tags": "深度推理,逻辑分析,高质生成",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 2.5,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 8,
+      "cache_ratio": 0.1,
+      "enable_groups": [
+        "Codex-Stable"
+      ],
+      "supported_endpoint_types": [
+        "openai",
+        "openai-response"
+      ]
+    },
+    {
+      "model_name": "gpt-5.3-codex-spark",
+      "description": "OpenAI 面向编程与代码任务的轻快型 Codex 模型，适合代码补全、代理执行与工程场景。",
+      "icon": "OpenAI",
+      "tags": "快速轻量,代码工程,日常问答",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 0.875,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 8,
+      "cache_ratio": 0.1,
+      "enable_groups": [
+        "Codex-Stable"
+      ],
+      "supported_endpoint_types": [
+        "openai",
+        "openai-response"
+      ]
+    },
+    {
+      "model_name": "gpt-5.3-codex",
+      "description": "OpenAI 面向代码补全、代码编辑与工程任务的 Codex 系列模型，适合编程代理与代码生成。",
+      "tags": "代码审查,代码工程,长文处理",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 0.875,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 8,
+      "cache_ratio": 0.102857,
+      "enable_groups": [
+        "Codex-Stable"
+      ],
+      "supported_endpoint_types": [
+        "openai",
+        "openai-response"
+      ]
+    },
+    {
+      "model_name": "gpt-5.5",
+      "description": "OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。",
+      "icon": "OpenAI",
+      "tags": "日常问答,代码工程,高质生成",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 0.09375,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 6,
+      "enable_groups": [
+        "Codex-Stable"
+      ],
+      "supported_endpoint_types": [
+        "path",
+        "method"
+      ]
+    }
+  ],
+  "group_ratio": {
+    "Claude-AWS": 3,
+    "Claude-MAX": 2.5,
+    "Codex-Stable": 0.5,
+    "Codex-Standard": 0.2
+  },
+  "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
+  "success": true,
+  "supported_endpoint": {
+    "method": {
+      "path": "POST",
+      "method": "POST"
+    },
+    "openai": {
+      "path": "/v1/chat/completions",
+      "method": "POST"
+    },
+    "openai-response": {
+      "path": "/v1/responses",
+      "method": "POST"
+    },
+    "path": {
+      "path": "/v1/chat/completions",
+      "method": "POST"
+    }
+  },
+  "usable_group": {
+    "Claude-AWS": "",
+    "Claude-MAX": "",
+    "Codex-Stable": "×20Pro池，核心生产",
+    "Codex-Standard": "Plus池，基础生产"
+  },
+  "vendors": [
+    {
+      "id": 7,
+      "name": "SAP AI Core"
+    },
+    {
+      "id": 8,
+      "name": "GitHub Copilot",
+      "icon": "GithubCopilot"
+    },
+    {
+      "id": 9,
+      "name": "Jiekou.AI"
+    },
+    {
+      "id": 10,
+      "name": "LLM Gateway"
+    },
+    {
+      "id": 2,
+      "name": "讯飞",
+      "icon": "Spark.Color"
+    },
+    {
+      "id": 4,
+      "name": "xAI",
+      "icon": "XAI"
+    },
+    {
+      "id": 11,
+      "name": "Venice AI",
+      "icon": "VeniceAI"
+    },
+    {
+      "id": 12,
+      "name": "OpenCode Zen",
+      "icon": "OpenCode"
+    },
+    {
+      "id": 1,
+      "name": "OpenAI",
+      "icon": "OpenAI"
+    },
+    {
+      "id": 3,
+      "name": "Anthropic",
+      "icon": "Claude.Color"
+    },
+    {
+      "id": 5,
+      "name": "Vivgrid"
+    },
+    {
+      "id": 6,
+      "name": "Helicone"
+    }
+  ]
+}
