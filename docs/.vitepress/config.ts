@@ -1,17 +1,18 @@
 import { defineConfig } from 'vitepress'
 
 const repoName = 'diudi-docs'
+const basePath = process.env.GITHUB_ACTIONS ? `/${repoName}/` : '/'
 
 export default defineConfig({
   title: 'diudi文档',
   description: 'DouDi.ai 使用文档',
   lang: 'zh-CN',
-  base: process.env.GITHUB_ACTIONS ? `/${repoName}/` : '/',
+  base: basePath,
   cleanUrls: true,
   lastUpdated: true,
   head: [['meta', { name: 'theme-color', content: '#ffffff' }]],
   themeConfig: {
-    logo: '/logo.svg',
+    logo: `${basePath}logo.svg`,
     siteTitle: 'diudi文档',
     nav: [
       { text: '指南', link: '/guide/product' },
