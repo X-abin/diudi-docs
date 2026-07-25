@@ -1,7 +1,5 @@
 # 模型与价格
 
-本页由 `scripts/sync-doudi-data.ts` 从 DouDi.ai 公开接口异步生成，数据更新时间：`2026-07-25T09:12:56.898Z`。
-
 ::: tip 阅读方式
 `model_ratio`、`completion_ratio`、`cache_ratio` 是平台公开返回的计费权重字段。实际扣费还会受到账号分组、额度余额、特殊计费规则和平台后台配置影响，请以登录后的控制台记录为准。
 :::
@@ -42,13 +40,13 @@
 
 | 模型 | 供应商 | 描述 | 标签 | 输入倍率 | 输出倍率 | 缓存倍率 | 固定价格 | 可用分组 | 接口类型 |
 | --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- |
-| `gpt-5.5` | OpenAI | OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。 | 日常问答,代码工程,高质生成 | 0.09375 | 6 | - | 0 | Codex-Stable | path, method |
+| `gpt-5.6-terra` | OpenAI | OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。 | 深度推理,逻辑分析,长文处理 | 0.75 | 8 | - | 0 | Codex-Stable | path, method |
+| `gpt-5.6` | OpenAI | OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。 | 深度推理,逻辑分析,高质生成 | 2.5 | 8 | 0.1 | 0 | Codex-Stable | openai, openai-response |
+| `gpt-5.3-codex-spark` | OpenAI | OpenAI 面向编程与代码任务的轻快型 Codex 模型，适合代码补全、代理执行与工程场景。 | 快速轻量,代码工程,日常问答 | 0.875 | 8 | 0.1 | 0 | Codex-Stable | openai, openai-response |
+| `gpt-5.3-codex` | OpenAI | OpenAI 面向代码补全、代码编辑与工程任务的 Codex 系列模型，适合编程代理与代码生成。 | 代码审查,代码工程,长文处理 | 0.875 | 8 | 0.102857 | 0 | Codex-Stable | openai, openai-response |
+| `gpt-5.6-luna` | OpenAI | OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。 | 深度推理,长文处理,高质生成 | 0.35 | 8 | - | 0 | Codex-Stable | path, method |
 | `gpt-5.6-sol` | OpenAI | OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。 | 深度推理,逻辑分析,高质生成 | 1.25 | 8 | - | 0 | Codex-Stable | openai, openai-response |
 | `gpt-5.4` | OpenAI | OpenAI 最新旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。 | 日常问答,长文处理,代码工程 | 37.5 | 6 | - | 0 | Codex-Stable | openai, openai-response |
-| `gpt-5.6` | OpenAI | OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。 | 深度推理,逻辑分析,高质生成 | 2.5 | 8 | 0.1 | 0 | Codex-Stable | openai, openai-response |
 | `codex-auto-review` | OpenAI | 适配 Codex 自动审批功能的模型别名，实际请求会映射到 gpt-5.5。 | 代码审查,逻辑分析,代码工程 | 37.5 | 1 | - | 0 | Codex-Stable | openai, openai-response |
-| `gpt-5.3-codex-spark` | OpenAI | OpenAI 面向编程与代码任务的轻快型 Codex 模型，适合代码补全、代理执行与工程场景。 | 快速轻量,代码工程,日常问答 | 0.875 | 8 | 0.1 | 0 | Codex-Stable | openai, openai-response |
-| `gpt-5.4-mini` | OpenAI | gpt-5.4-mini模型的变体模型，只为了compact压缩而存在。 | 快速轻量,日常问答,逻辑分析 | 0.375 | 6 | - | 0 | Codex-Stable | method, path |
-| `gpt-5.3-codex` | OpenAI | OpenAI 面向代码补全、代码编辑与工程任务的 Codex 系列模型，适合编程代理与代码生成。 | 代码审查,代码工程,长文处理 | 0.875 | 8 | 0.102857 | 0 | Codex-Stable | openai, openai-response |
-| `gpt-5.6-terra` | OpenAI | OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。 | 深度推理,逻辑分析,长文处理 | 0.75 | 8 | - | 0 | Codex-Stable | method, path |
-| `gpt-5.6-luna` | OpenAI | OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。 | 深度推理,长文处理,高质生成 | 0.35 | 8 | - | 0 | Codex-Stable | path, method |
+| `gpt-5.4-mini` | OpenAI | gpt-5.4-mini模型的变体模型，只为了compact压缩而存在。 | 快速轻量,日常问答,逻辑分析 | 0.375 | 6 | - | 0 | Codex-Stable | path, method |
+| `gpt-5.5` | OpenAI | OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。 | 日常问答,代码工程,高质生成 | 0.09375 | 6 | - | 0 | Codex-Stable | path, method |

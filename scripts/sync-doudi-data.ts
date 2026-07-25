@@ -156,13 +156,10 @@ function renderModelTable(pricing: PricingData): string {
 }
 
 function renderModelsPage(status: StatusData, pricing: PricingData): string {
-  const updatedAt = new Date().toISOString()
   const modelCount = pricing.data.length
   const vendors = pricing.vendors?.length ?? 0
 
   return `# 模型与价格
-
-本页由 \`scripts/sync-doudi-data.ts\` 从 DouDi.ai 公开接口异步生成，数据更新时间：\`${updatedAt}\`。
 
 ::: tip 阅读方式
 \`model_ratio\`、\`completion_ratio\`、\`cache_ratio\` 是平台公开返回的计费权重字段。实际扣费还会受到账号分组、额度余额、特殊计费规则和平台后台配置影响，请以登录后的控制台记录为准。
