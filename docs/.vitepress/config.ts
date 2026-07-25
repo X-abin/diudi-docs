@@ -16,6 +16,7 @@ export default defineConfig({
     siteTitle: 'diudi文档',
     nav: [
       { text: '指南', link: '/guide/product' },
+      { text: '工具接入', link: '/integrations/openai-compatible' },
       { text: '模型与价格', link: '/guide/models-pricing' },
       { text: 'DouDi.ai', link: 'https://doudi.ai' }
     ],
@@ -28,6 +29,24 @@ export default defineConfig({
           { text: '创建 API Key', link: '/guide/create-api-key' },
           { text: '模型与价格', link: '/guide/models-pricing' },
           { text: '计费与额度', link: '/guide/billing-quota' }
+        ]
+      },
+      {
+        text: '工具接入',
+        items: [
+          { text: 'OpenAI Compatible', link: '/integrations/openai-compatible' },
+          { text: 'Cursor', link: '/integrations/cursor' },
+          { text: 'Claude Code', link: '/integrations/claude-code' },
+          { text: 'Codex CLI', link: '/integrations/codex-cli' },
+          { text: 'Cherry Studio', link: '/integrations/cherry-studio' },
+          { text: 'Chatbox', link: '/integrations/chatbox' },
+          { text: 'Open WebUI', link: '/integrations/open-webui' },
+          { text: 'CodeBuddy', link: '/integrations/codebuddy' },
+          { text: 'Trae', link: '/integrations/trae' },
+          { text: 'CC Switch', link: '/integrations/cc-switch' },
+          { text: 'Hermes / OpenClaw 403 代理', link: '/integrations/hermes-openclaw-403' },
+          { text: 'LangChain / SDK', link: '/integrations/langchain-sdk' },
+          { text: '常见问题排查', link: '/integrations/troubleshooting' }
         ]
       }
     ],
