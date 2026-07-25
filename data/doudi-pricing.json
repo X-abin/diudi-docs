@@ -2,22 +2,22 @@
   "auto_groups": [],
   "data": [
     {
-      "model_name": "gpt-5.3-codex",
-      "description": "OpenAI 面向代码补全、代码编辑与工程任务的 Codex 系列模型，适合编程代理与代码生成。",
-      "tags": "代码审查,代码工程,长文处理",
+      "model_name": "gpt-5.5",
+      "description": "OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。",
+      "icon": "OpenAI",
+      "tags": "日常问答,代码工程,高质生成",
       "vendor_id": 1,
       "quota_type": 0,
-      "model_ratio": 0.875,
+      "model_ratio": 0.09375,
       "model_price": 0,
       "owner_by": "",
-      "completion_ratio": 8,
-      "cache_ratio": 0.102857,
+      "completion_ratio": 6,
       "enable_groups": [
         "Codex-Stable"
       ],
       "supported_endpoint_types": [
-        "openai",
-        "openai-response"
+        "path",
+        "method"
       ],
       "pricing_version": "5a90f2b86c08bd983a9a2e6d66c255f4eaef9c4bc934386d2b6ae84ef0ff1f1f"
     },
@@ -133,27 +133,27 @@
         "Codex-Stable"
       ],
       "supported_endpoint_types": [
-        "path",
-        "method"
+        "method",
+        "path"
       ]
     },
     {
-      "model_name": "gpt-5.5",
-      "description": "OpenAI 新一代旗舰通用大模型，适合复杂推理、长上下文、多场景高质量文本生成。",
-      "icon": "OpenAI",
-      "tags": "日常问答,代码工程,高质生成",
+      "model_name": "gpt-5.3-codex",
+      "description": "OpenAI 面向代码补全、代码编辑与工程任务的 Codex 系列模型，适合编程代理与代码生成。",
+      "tags": "代码审查,代码工程,长文处理",
       "vendor_id": 1,
       "quota_type": 0,
-      "model_ratio": 0.09375,
+      "model_ratio": 0.875,
       "model_price": 0,
       "owner_by": "",
-      "completion_ratio": 6,
+      "completion_ratio": 8,
+      "cache_ratio": 0.102857,
       "enable_groups": [
         "Codex-Stable"
       ],
       "supported_endpoint_types": [
-        "path",
-        "method"
+        "openai",
+        "openai-response"
       ]
     },
     {
@@ -171,8 +171,8 @@
         "Codex-Stable"
       ],
       "supported_endpoint_types": [
-        "path",
-        "method"
+        "method",
+        "path"
       ]
     },
     {
@@ -229,41 +229,13 @@
   },
   "vendors": [
     {
-      "id": 8,
-      "name": "GitHub Copilot",
-      "icon": "GithubCopilot"
-    },
-    {
       "id": 9,
       "name": "Jiekou.AI"
-    },
-    {
-      "id": 10,
-      "name": "LLM Gateway"
-    },
-    {
-      "id": 4,
-      "name": "xAI",
-      "icon": "XAI"
-    },
-    {
-      "id": 7,
-      "name": "SAP AI Core"
-    },
-    {
-      "id": 11,
-      "name": "Venice AI",
-      "icon": "VeniceAI"
     },
     {
       "id": 12,
       "name": "OpenCode Zen",
       "icon": "OpenCode"
-    },
-    {
-      "id": 1,
-      "name": "OpenAI",
-      "icon": "OpenAI"
     },
     {
       "id": 2,
@@ -276,12 +248,40 @@
       "icon": "Claude.Color"
     },
     {
+      "id": 4,
+      "name": "xAI",
+      "icon": "XAI"
+    },
+    {
+      "id": 7,
+      "name": "SAP AI Core"
+    },
+    {
+      "id": 10,
+      "name": "LLM Gateway"
+    },
+    {
+      "id": 11,
+      "name": "Venice AI",
+      "icon": "VeniceAI"
+    },
+    {
+      "id": 1,
+      "name": "OpenAI",
+      "icon": "OpenAI"
+    },
+    {
       "id": 5,
       "name": "Vivgrid"
     },
     {
       "id": 6,
       "name": "Helicone"
+    },
+    {
+      "id": 8,
+      "name": "GitHub Copilot",
+      "icon": "GithubCopilot"
     }
   ]
 }
