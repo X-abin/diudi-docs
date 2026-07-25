@@ -25,12 +25,7 @@ export default defineConfig({
         items: [
           { text: '产品介绍', link: '/guide/product' },
           { text: '快速开始', link: '/guide/quick-start' },
-          { text: '创建 API Key', link: '/guide/create-api-key' }
-        ]
-      },
-      {
-        text: '费用与模型',
-        items: [
+          { text: '创建 API Key', link: '/guide/create-api-key' },
           { text: '模型与价格', link: '/guide/models-pricing' },
           { text: '计费与额度', link: '/guide/billing-quota' }
         ]
