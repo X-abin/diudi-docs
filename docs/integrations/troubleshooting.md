@@ -119,3 +119,21 @@ C:\Users\你的用户名\.codex\.env
 - 如果 `.env` 已存在，只追加或更新代理行，保留其他配置。
 - 写入后需要完全退出并重启 Codex Desktop。
 - 如果仍然重连，确认代理软件已开启 HTTP/mixed 入站，并允许本机 `127.0.0.1` 连接。
+
+## 503 No available OAuth accounts in pool
+
+如果报错里出现 `503 Service Unavailable` 和 `No available OAuth accounts in pool`，这通常是 OAuth 账号池不可用，不是模型配置错误。
+
+处理方式：
+
+1. 先确认你是否在用 OAuth 登录模式。
+2. 如果可以切换，改用 API Key / OpenAI Compatible 模式。
+3. 如果必须用 OAuth，先退出再重新登录一次。
+4. 稍后重试，很多时候是账号池临时耗尽。
+5. 如果你是自建或团队环境的维护者，检查账号池里是否还有可用 OAuth 账号，是否有人掉线、失效、限流或需要重新授权。
+
+判断建议：
+
+- 这个错误和代理端口不一定相关。
+- 它更像认证池资源耗尽，而不是接口地址写错。
+- 如果同时还有 401 / 403，再分别检查 Key、权限和网络。

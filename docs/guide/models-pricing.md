@@ -37,14 +37,14 @@
 
 | 模型 | 供应商 | 描述 | 标签 | 输入倍率 | 输出倍率 | 缓存倍率 | 固定价格 | 可用分组 | 接口类型 |
 | --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- |
-| `gpt-5.3-codex-spark` | OpenAI | - | - | 0.875 | 8 | 0.1 | 0 | default | openai, openai-response |
-| `gpt-5.5-openai-compact` | OpenAI | - | - | 37.5 | 6 | - | 0 | default | openai, openai-response |
-| `gpt-5.4-mini` | OpenAI | - | - | 0.1875 | 6 | 0.1 | 0 | default | openai, openai-response |
-| `gpt-5.4` | OpenAI | - | - | 0.375 | 6 | 0.1 | 0 | default | openai, openai-response |
 | `gpt-5.4-openai-compact` | OpenAI | - | - | 37.5 | 6 | - | 0 | default | openai, openai-response |
 | `gpt-5.6-terra` | OpenAI | - | - | 0.75 | 8 | - | 0 | default | openai, openai-response |
 | `gpt-5.6-luna` | OpenAI | - | - | 0.35 | 8 | - | 0 | default | openai, openai-response |
-| `gpt-5.4-mini-openai-compact` | OpenAI | - | - | 37.5 | 6 | - | 0 | default | openai, openai-response |
-| `gpt-5.5` | OpenAI | - | - | 0.09375 | 6 | 0.1 | 0 | default | openai, openai-response |
-| `gpt-5.6-sol` | OpenAI | - | - | 0.75 | 8 | 0.1 | 0 | default | openai, openai-response |
 | `codex-auto-review` | - | - | - | 2.5 | 30 | 0.1 | 0 | default | openai, openai-response |
+| `gpt-5.3-codex-spark` | OpenAI | - | - | 0.875 | 8 | 0.1 | 0 | default | openai, openai-response |
+| `gpt-5.5` | OpenAI | - | - | 0.09375 | 6 | 0.1 | 0 | default | openai, openai-response |
+| `gpt-5.4-mini-openai-compact` | OpenAI | - | - | 37.5 | 6 | - | 0 | default | openai, openai-response |
+| `gpt-5.6-sol` | OpenAI | - | - | 0.75 | 8 | 0.1 | 0 | default | openai, openai-response |
+| `gpt-5.5-openai-compact` | OpenAI | - | - | 37.5 | 6 | - | 0 | default | openai, openai-response |
+| `gpt-5.4-mini` | OpenAI | - | - | 0.1875 | 6 | 0.1 | 0 | default | openai, openai-response |
+| `gpt-5.4` | OpenAI | - | - | 0.375 | 6 | 0.1 | 0 | default | openai, openai-response |

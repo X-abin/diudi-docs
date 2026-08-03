@@ -4,6 +4,75 @@
   ],
   "data": [
     {
+      "model_name": "gpt-5.4-openai-compact",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 37.5,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 6,
+      "enable_groups": [
+        "default"
+      ],
+      "supported_endpoint_types": [
+        "openai",
+        "openai-response"
+      ],
+      "pricing_version": "5a90f2b86c08bd983a9a2e6d66c255f4eaef9c4bc934386d2b6ae84ef0ff1f1f"
+    },
+    {
+      "model_name": "gpt-5.6-terra",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 0.75,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 8,
+      "enable_groups": [
+        "default"
+      ],
+      "supported_endpoint_types": [
+        "openai",
+        "openai-response"
+      ],
+      "billing_mode": "tiered_expr",
+      "billing_expr": "len < 272000 ? tier(\"Short\", p * 2.5 + c * 15 + cr * 0.5 + cc * 6.25) : tier(\"Long\", p * 5 + c * 22.5 + cr * 0.5 + cc * 3.125)"
+    },
+    {
+      "model_name": "gpt-5.6-luna",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 0.35,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 8,
+      "enable_groups": [
+        "default"
+      ],
+      "supported_endpoint_types": [
+        "openai",
+        "openai-response"
+      ],
+      "billing_mode": "tiered_expr",
+      "billing_expr": "len < 272000 ? tier(\"Short\", p * 1 + c * 6 + cr * 0.1 + cc * 1.25) : tier(\"Long\", p * 2 + c * 9 + cr * 0.2 + cc * 2.5)"
+    },
+    {
+      "model_name": "codex-auto-review",
+      "quota_type": 0,
+      "model_ratio": 2.5,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 30,
+      "cache_ratio": 0.1,
+      "enable_groups": [
+        "default"
+      ],
+      "supported_endpoint_types": [
+        "openai",
+        "openai-response"
+      ]
+    },
+    {
       "model_name": "gpt-5.3-codex-spark",
       "vendor_id": 1,
       "quota_type": 0,
@@ -18,8 +87,59 @@
       "supported_endpoint_types": [
         "openai",
         "openai-response"
+      ]
+    },
+    {
+      "model_name": "gpt-5.5",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 0.09375,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 6,
+      "cache_ratio": 0.1,
+      "enable_groups": [
+        "default"
       ],
-      "pricing_version": "5a90f2b86c08bd983a9a2e6d66c255f4eaef9c4bc934386d2b6ae84ef0ff1f1f"
+      "supported_endpoint_types": [
+        "openai",
+        "openai-response"
+      ]
+    },
+    {
+      "model_name": "gpt-5.4-mini-openai-compact",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 37.5,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 6,
+      "enable_groups": [
+        "default"
+      ],
+      "supported_endpoint_types": [
+        "openai",
+        "openai-response"
+      ]
+    },
+    {
+      "model_name": "gpt-5.6-sol",
+      "vendor_id": 1,
+      "quota_type": 0,
+      "model_ratio": 0.75,
+      "model_price": 0,
+      "owner_by": "",
+      "completion_ratio": 8,
+      "cache_ratio": 0.1,
+      "enable_groups": [
+        "default"
+      ],
+      "supported_endpoint_types": [
+        "openai",
+        "openai-response"
+      ],
+      "billing_mode": "tiered_expr",
+      "billing_expr": "len < 272000 ? tier(\"Short\", p * 5 + c * 30 + cr * 0.5 + cc * 6.25) : tier(\"Long\", p * 10 + c * 45 + cr * 1 + cc * 12.5)"
     },
     {
       "model_name": "gpt-5.5-openai-compact",
@@ -62,126 +182,6 @@
       "model_price": 0,
       "owner_by": "",
       "completion_ratio": 6,
-      "cache_ratio": 0.1,
-      "enable_groups": [
-        "default"
-      ],
-      "supported_endpoint_types": [
-        "openai",
-        "openai-response"
-      ]
-    },
-    {
-      "model_name": "gpt-5.4-openai-compact",
-      "vendor_id": 1,
-      "quota_type": 0,
-      "model_ratio": 37.5,
-      "model_price": 0,
-      "owner_by": "",
-      "completion_ratio": 6,
-      "enable_groups": [
-        "default"
-      ],
-      "supported_endpoint_types": [
-        "openai",
-        "openai-response"
-      ]
-    },
-    {
-      "model_name": "gpt-5.6-terra",
-      "vendor_id": 1,
-      "quota_type": 0,
-      "model_ratio": 0.75,
-      "model_price": 0,
-      "owner_by": "",
-      "completion_ratio": 8,
-      "enable_groups": [
-        "default"
-      ],
-      "supported_endpoint_types": [
-        "openai",
-        "openai-response"
-      ],
-      "billing_mode": "tiered_expr",
-      "billing_expr": "len < 272000 ? tier(\"Short\", p * 2.5 + c * 15 + cr * 0.5 + cc * 6.25) : tier(\"Long\", p * 5 + c * 22.5 + cr * 0.5 + cc * 3.125)"
-    },
-    {
-      "model_name": "gpt-5.6-luna",
-      "vendor_id": 1,
-      "quota_type": 0,
-      "model_ratio": 0.35,
-      "model_price": 0,
-      "owner_by": "",
-      "completion_ratio": 8,
-      "enable_groups": [
-        "default"
-      ],
-      "supported_endpoint_types": [
-        "openai",
-        "openai-response"
-      ],
-      "billing_mode": "tiered_expr",
-      "billing_expr": "len < 272000 ? tier(\"Short\", p * 1 + c * 6 + cr * 0.1 + cc * 1.25) : tier(\"Long\", p * 2 + c * 9 + cr * 0.2 + cc * 2.5)"
-    },
-    {
-      "model_name": "gpt-5.4-mini-openai-compact",
-      "vendor_id": 1,
-      "quota_type": 0,
-      "model_ratio": 37.5,
-      "model_price": 0,
-      "owner_by": "",
-      "completion_ratio": 6,
-      "enable_groups": [
-        "default"
-      ],
-      "supported_endpoint_types": [
-        "openai",
-        "openai-response"
-      ]
-    },
-    {
-      "model_name": "gpt-5.5",
-      "vendor_id": 1,
-      "quota_type": 0,
-      "model_ratio": 0.09375,
-      "model_price": 0,
-      "owner_by": "",
-      "completion_ratio": 6,
-      "cache_ratio": 0.1,
-      "enable_groups": [
-        "default"
-      ],
-      "supported_endpoint_types": [
-        "openai",
-        "openai-response"
-      ]
-    },
-    {
-      "model_name": "gpt-5.6-sol",
-      "vendor_id": 1,
-      "quota_type": 0,
-      "model_ratio": 0.75,
-      "model_price": 0,
-      "owner_by": "",
-      "completion_ratio": 8,
-      "cache_ratio": 0.1,
-      "enable_groups": [
-        "default"
-      ],
-      "supported_endpoint_types": [
-        "openai",
-        "openai-response"
-      ],
-      "billing_mode": "tiered_expr",
-      "billing_expr": "len < 272000 ? tier(\"Short\", p * 5 + c * 30 + cr * 0.5 + cc * 6.25) : tier(\"Long\", p * 10 + c * 45 + cr * 1 + cc * 12.5)"
-    },
-    {
-      "model_name": "codex-auto-review",
-      "quota_type": 0,
-      "model_ratio": 2.5,
-      "model_price": 0,
-      "owner_by": "",
-      "completion_ratio": 30,
       "cache_ratio": 0.1,
       "enable_groups": [
         "default"

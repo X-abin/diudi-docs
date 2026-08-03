@@ -49,6 +49,24 @@ C:\Users\你的用户名\.codex\.env
 
 写好后完全退出 Codex Desktop，再重新打开。如果仍然频繁重连，检查代理软件是否开启了 HTTP 或 mixed 端口，并确认防火墙没有拦截本地代理连接。
 
+## 503 No available OAuth accounts in pool
+
+如果报错里出现 `503 Service Unavailable`，并且带有 `No available OAuth accounts in pool`，通常说明当前 OAuth 账号池里没有可用账号。这不是模型名写错，也不是简单的超时。
+
+处理步骤：
+
+1. 先确认你当前用的是 OAuth 登录模式还是 API Key 模式。
+2. 如果工具支持，优先切到 API Key / OpenAI Compatible 方式。
+3. 如果必须使用 OAuth，退出后重新登录一次。
+4. 过一会儿再重试，很多时候只是临时账号池耗尽。
+5. 如果你在自建或团队环境里使用，检查 OAuth 账号池里是否还有可用账号，账号是否失效、被限流、掉线或需要重新授权。
+
+补充判断：
+
+- 如果错误明确写了 `No available OAuth accounts in pool`，优先按账号池问题排查。
+- 如果报错是 401 / 403，再回头检查 Key、权限和代理。
+- 如果长时间一直 503，联系维护端补充可用 OAuth 账号。
+
 ## 常见问题
 
 | 现象 | 原因与处理 |
@@ -57,3 +75,4 @@ C:\Users\你的用户名\.codex\.env
 | 模型不存在 | 模型名不在当前账号可用列表中。 |
 | 请求超时 | 降低上下文，或切换响应更快的模型。 |
 | 频繁 Reconnect | 检查 `~/.codex/.env` 中的 `HTTP_PROXY` 和 `HTTPS_PROXY` 是否指向本机实际代理端口。 |
+| 503 且提示 OAuth pool | 当前 OAuth 账号池没有可用账号，优先切到 API Key 或等待账号池恢复。 |
