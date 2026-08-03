@@ -1,4 +1,4 @@
-# diudi文档
+# diudi教程文档
 
 这是面向 DouDi.ai 的中文使用文档站，使用 VitePress 构建。
 

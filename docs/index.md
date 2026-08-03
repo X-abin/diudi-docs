@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: diudi文档
+  name: diudi教程文档
   text: DouDi.ai 使用指南
   tagline: 面向第一次使用 API 网关的新手，整理产品能力、API Key 创建、模型价格、计费额度和常见接入步骤。
   actions:

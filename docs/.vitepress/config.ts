@@ -4,7 +4,7 @@ const repoName = 'diudi-docs'
 const basePath = process.env.GITHUB_ACTIONS ? `/${repoName}/` : '/'
 
 export default defineConfig({
-  title: 'diudi文档',
+  title: 'diudi教程文档',
   description: 'DouDi.ai 使用文档',
   lang: 'zh-CN',
   base: basePath,
@@ -13,7 +13,7 @@ export default defineConfig({
   head: [['meta', { name: 'theme-color', content: '#ffffff' }]],
   themeConfig: {
     logo: `${basePath}logo.svg`,
-    siteTitle: 'diudi文档',
+    siteTitle: 'diudi教程文档',
     nav: [
       { text: '指南', link: '/guide/product' },
       { text: '工具接入', link: '/integrations/openai-compatible' },
@@ -69,7 +69,7 @@ export default defineConfig({
     },
     footer: {
       message: '本文档基于 DouDi.ai 公开页面与公开接口整理。',
-      copyright: 'Copyright © 2026 diudi文档'
+      copyright: 'Copyright © 2026 diudi教程文档'
     },
     editLink: {
       pattern: 'https://github.com/X-abin/diudi-docs/edit/main/docs/:path',
